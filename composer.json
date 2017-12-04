@@ -1,0 +1,25 @@
+{
+  "name": "lorenzoricci/zf2-auth-connector",
+  "description": "Auth Module",
+  "type": "library",
+  "version": "1.0.6",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Lorenzo Ricci",
+      "email": "lorenzo.ricci@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "zendframework/zendframework": "2.*",
+    "doctrine/annotations": "1.2.*@dev",
+    "neilime/zf2-twb-bundle": "2.3.0",
+    "neilime/zf2-assets-bundle": "1.0.*@dev"
+  },
+  "autoload": {
+    "psr-0": {
+      "Login\\": "src/"
+    }
+  }
+}

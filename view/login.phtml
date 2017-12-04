@@ -1,0 +1,28 @@
+<?php
+$form = $this->form;
+
+$form->prepare();
+$form->setAttribute('id','login-form');
+$form->setAttribute('class','form-horizontal');
+$this->form($form, \TwbBundle\Form\View\Helper\TwbBundleForm::LAYOUT_HORIZONTAL );
+
+?>			
+
+<h2><?php echo $this->translate("Login to system"); ?></h2>
+
+<hr/>
+
+<?php echo $this->form()->openTag($form); ?>
+		
+	<?php echo $this->formRow($form->get('login')); ?>
+	<?php echo $this->formRow($form->get('password')); ?> 
+  	
+  	<div class="form-group">
+    	<div class="col-lg-offset-3 col-lg-6">
+			<button type="submit" class="btn btn-success btn-lg"><?php echo $this->translate("Login"); ?></button>
+		</div>
+	</div>
+  	  		
+	<!--<?php echo $this->formSubmit($form->get('submit')); ?>-->
+
+<?php echo $this->form()->closeTag();

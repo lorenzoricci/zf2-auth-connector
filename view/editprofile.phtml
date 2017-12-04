@@ -1,0 +1,55 @@
+<h2><?php echo $this->translate('Update profile'); ?></h2>
+
+<hr/>
+
+<?php
+$form = $this->form;
+$form->prepare();
+$this->form($form, \TwbBundle\Form\View\Helper\TwbBundleForm::LAYOUT_HORIZONTAL);
+?>
+
+<?php echo $this->form()->openTag($form); ?>
+
+<div class="row">
+
+<div class="col-md-6">
+
+	<fieldset class="form-horizontal">
+	
+		<?php echo $this->formRow($form->get('name')); ?>
+		<?php echo $this->formRow($form->get('vat')); ?>	
+		<?php echo $this->formRow($form->get('address')); ?>
+		<?php echo $this->formRow($form->get('zip')); ?>
+		<?php echo $this->formRow($form->get('city')); ?>
+		<?php echo $this->formRow($form->get('country')); ?>
+				
+  	</fieldset>  		
+</div><!-- /.col-md-6 -->
+
+<div class="col-md-6">
+
+	<fieldset class="form-horizontal">
+	
+		<?php echo $this->formRow($form->get('currency')); ?>
+		<?php echo $this->formRow($form->get('tax')); ?>
+		<?php echo $this->formRow($form->get('language')); ?>
+		<?php echo $this->formRow($form->get('notes')); ?>
+		
+		
+				
+  	</fieldset>  	
+  	
+</div><!-- /.col-md-6 -->
+
+</div><!-- /.row -->
+
+<div class="row ">
+	<div class="col-md-12 col-sm-12" style="margin-top: 20px; margin-bottom: 10px">
+		<button type="submit" class="btn btn-success btn-lg pull-right"><?php echo $this->translate("Update profile"); ?></button>
+	</div>
+</div>
+
+<?php echo $this->form()->closeTag(); ?>
+
+
+

@@ -1,0 +1,8 @@
+# GIT ignore list
+
+.*
+.idea/
+!.gitignore
+vendor/
+composer.lock
+nbproject/
