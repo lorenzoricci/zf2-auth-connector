@@ -2,8 +2,8 @@
   "name": "lorenzoricci/zf2-auth-connector",
   "description": "Auth Module",
   "type": "library",
-  "version": "1.0.6",
-  "license": "proprietary",
+  "version": "1.0.7",
+  "license": "GPLv3",
   "authors": [
     {
       "name": "Lorenzo Ricci",
